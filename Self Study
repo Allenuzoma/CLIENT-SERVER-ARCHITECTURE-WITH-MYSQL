@@ -13,11 +13,6 @@ Output: Lists all intermediary routers (hops) the packets pass through, providin
 
 
 
-
-
-
-
-
 Basic SQL Commands:
 SELECT: Retrieves data from one or more tables in a database. Example: SELECT * FROM users; gets all records from the users table.
 
