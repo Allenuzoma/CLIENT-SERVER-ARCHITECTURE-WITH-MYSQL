@@ -19,6 +19,16 @@
 ![instance 2 details](https://github.com/user-attachments/assets/3ba8b067-50ee-422b-bcac-f4f97778ced6)
 
 
-4. Configure the security group of the mysql-server to include port 22 connecting to Instant Connect Ip and port 3306 
-  on
+4. Configure the security group of the mysql-server as shown below:
+
+   ![sg server](https://github.com/user-attachments/assets/7e4c2c3a-a089-4d94-a405-cbc394c278f1)
+
+5. Configure the security group of the mysql-client as shown below:
    
+   ![sg client](https://github.com/user-attachments/assets/323662f9-368e-435c-8e39-87886578f806)
+
+You might need to configure MySQL server to allow connections from remote hosts.
+
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+
+Replace the Bind address 127.0.0.1 with 0.0.0.0
