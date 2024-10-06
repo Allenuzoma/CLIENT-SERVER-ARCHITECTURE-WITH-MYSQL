@@ -10,7 +10,9 @@
 
 2. Note the details of mysql-server
 
-  ![instance 1 details](https://github.com/user-attachments/assets/41d038d8-7c00-47f9-a95a-0833785e50f7)
+ 
+  
+![instance 1 details](https://github.com/user-attachments/assets/41d038d8-7c00-47f9-a95a-0833785e50f7)
 
 
 3. Note the details of mysql-server
@@ -67,12 +69,13 @@
 6. You might need to configure MySQL server to allow connections from remote hosts. On the mysql-server, enter the command:
 
 
-      sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+         sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
 
 
 7. Replace the Bind address 127.0.0.1 with 0.0.0.0 as shown below:
 
-![changing bind address on server](https://github.com/user-attachments/assets/000e572d-f13d-4cc0-b83a-a6f86a62293c)
+
+   ![changing bind address on server](https://github.com/user-attachments/assets/000e572d-f13d-4cc0-b83a-a6f86a62293c)
 
 9. Enter mysql console by entering the command:
 
@@ -86,26 +89,27 @@
 11. Exit the console by entering:
 
 
-       exit
+          exit
 
 
 12. Re-enter the mysql-server console as root user by using the command:
 
-       sudo mysql -u root -p
+        sudo mysql -u root -p
 
 13. We have to create a new user and grant all privileges to it. This user is the 
     mysql-client running in the second vm. Enter the command to do this:
 
-    #Create remote_user
-    CREATE USER 'remote_user'@'%' IDENTIFIED BY 'Password123$';
-    
-    #Grant all privileges
-    GRANT ALL PRIVILEGES ON '*' TO 'remote_user'@'%' WITH GRANT OPTION;
-
-    FLUSH PRIVILEGES;
-
+          #Create remote_user
+          CREATE USER 'remote_user'@'%' IDENTIFIED BY 'Password123$';
+          
+          #Grant all privileges
+          GRANT ALL PRIVILEGES ON '*' TO 'remote_user'@'%' WITH GRANT OPTION;
+      
+          FLUSH PRIVILEGES;
+   
+      
  14. Exit the console.   
-
+   
 
  15. On the mysql-client Instance Connect terminal, connect to the mysql-server 
      remotely by using the command:
@@ -125,6 +129,12 @@
     database:
 
           SHOW databases;
+
+
+    ![accessing server from client](https://github.com/user-attachments/assets/f8696908-c453-41a6-a942-418cef6d217c)
+
+
+
 
     We can connect to the database as shown above, this implies that the client-      server architecture has been created successfully.
 
