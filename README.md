@@ -1,7 +1,17 @@
 # CLIENT-SERVER-ARCHITECTURE-WITH-MYSQL
 
 
-**Step 0: Installing the prerequisites**
+
+Client-server architecture is a widely used system design where the client sends requests to the server, which processes those requests and returns the results. In the context of MySQL, this architecture enables the separation of concerns between the client (frontend or application) and the server (where MySQL runs to manage and store data).
+
+Client: The client, which can be a web or desktop application, initiates a connection to the MySQL server. It sends SQL queries to retrieve, update, or manipulate data stored in the MySQL database.
+
+Server: The server hosts the MySQL database. It listens for client connections over the network (typically on port 3306) and processes SQL queries sent by the client. It then returns the requested data or performs the specified operations (such as inserting or deleting data).
+
+Communication: The client communicates with the server using MySQL's communication protocols over TCP/IP. The server processes each request, interacts with the database, and sends back the response, which the client then uses to display data or take further action.
+
+
+**Steps: Implementing the Client-Server architecture with Mysql on AWS**
 1. Create two ubuntu ec2 virtual servers on AWS named: mysql-server & mysql-client
 
    
