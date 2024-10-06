@@ -12,13 +12,13 @@
 
  
   
-![instance 1 details](https://github.com/user-attachments/assets/41d038d8-7c00-47f9-a95a-0833785e50f7)
+   ![instance 1 details](https://github.com/user-attachments/assets/d62c7d3d-1d3f-4e64-ae49-ac780c34cd64)
 
 
-3. Note the details of mysql-server
+3. Note the details of mysql-client
 
 
-![instance 2 details](https://github.com/user-attachments/assets/3ba8b067-50ee-422b-bcac-f4f97778ced6)
+   ![instance 2 details](https://github.com/user-attachments/assets/4b3aaa4b-21aa-4b9b-8d86-35b259e591b8)
 
 
 4. Configure the security group of the 'mysql-server' as shown below:
