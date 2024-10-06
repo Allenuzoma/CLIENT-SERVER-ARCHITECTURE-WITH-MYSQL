@@ -1,0 +1,39 @@
+Ping: Ping is a network utility used to test connectivity between two devices over a network. It sends ICMP echo request packets to a target device and waits for a response to measure the round-trip time, helping to diagnose network reachability and latency.
+
+Traceroute: Traceroute is a network diagnostic tool that maps the path data packets take from the source to the destination by identifying each hop along the way. It provides information about each network device (router) the packets pass through, useful for troubleshooting network routing issues.
+
+Difference Between Ping and Traceroute:
+Ping:
+Purpose: Tests basic network connectivity between two devices by sending ICMP echo request packets and measuring the response time.
+Output: Shows if the target is reachable and provides the round-trip time (latency) but does not provide information on the path taken by the data packets.
+Traceroute:
+Purpose: Maps the exact path that data packets take from the source to the destination across the network by identifying each hop along the route.
+Output: Lists all intermediary routers (hops) the packets pass through, providing details about the path and identifying where delays or failures occur in the network.
+
+
+
+
+
+
+
+
+
+Basic SQL Commands:
+SELECT: Retrieves data from one or more tables in a database. Example: SELECT * FROM users; gets all records from the users table.
+
+INSERT: Adds new records to a table. Example: INSERT INTO users (name, age) VALUES ('John', 30); inserts a new user into the users table.
+
+UPDATE: Modifies existing records in a table. Example: UPDATE users SET age = 31 WHERE name = 'John'; updates the age of the user named John.
+
+DELETE: Removes records from a table. Example: DELETE FROM users WHERE name = 'John'; deletes the user named John.
+
+CREATE TABLE: Creates a new table in the database. Example: CREATE TABLE users (id INT, name VARCHAR(50));.
+
+ALTER TABLE: Modifies an existing table structure. Example: ALTER TABLE users ADD COLUMN email VARCHAR(100);.
+
+DROP TABLE: Deletes an entire table and its data. Example: DROP TABLE users;.
+
+JOIN: Combines rows from two or more tables based on a related column. Example: SELECT * FROM orders JOIN customers ON orders.customer_id = customers.id;.
+
+
+
