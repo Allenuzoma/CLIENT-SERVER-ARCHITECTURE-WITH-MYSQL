@@ -107,7 +107,30 @@
  14. Exit the console.   
 
 
- 15.  
+ 15. On the mysql-client Instance Connect terminal, connect to the mysql-server 
+     remotely by using the command:
+
+
+           mysql -h <mysql-server-Public IP> -u <username> -p
+
+
+     In this project we will use:
+
+           mysql -h 3.82.5.9 -u remote_user -p
+
+
+16. When prompted for password, enter 'Password123$'
+
+17. Run the following command to test remote_user access to the mysql-server 
+    database:
+
+          SHOW databases;
+
+    We can connect to the database as shown above, this implies that the client-      server architecture has been created successfully.
+
+        
+
+
     
 
     
